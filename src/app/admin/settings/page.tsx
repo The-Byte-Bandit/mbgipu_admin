@@ -116,7 +116,7 @@ export default function AdminSettings() {
 
           {/* Apply Changes */}
           <div className="glass-card rounded-xl p-6 border border-border bg-gradient-to-br from-primary/10 to-transparent">
-            <h3 className="font-display text-2xl font-black italic text-gold mb-4">APPLY ROYAL CHANGES</h3>
+            <h3 className="font-display text-2xl font-black italic text-gold mb-4">APPLY CHANGES</h3>
             <Button className="w-full bg-gradient-crimson font-body font-semibold tracking-[0.15em] py-5 mb-3">
               UPDATE REGISTRY
             </Button>
