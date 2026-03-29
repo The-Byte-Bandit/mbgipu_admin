@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom variables and styles */
+/* @layer base {
+  :root {
+    --background: 343 36% 9.8%;
+    --foreground: 0 0% 95%;
+    --card: 344 34.2% 14.9% / 0.3;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 345 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 345 85.2% 44.9% / 0.1;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 40 80% 55%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 345 34.6% 21%;
+    --input: 0 0% 18%;
+    --ring: 345 80% 50%;
+    --radius: 0.5rem;
+
+    --gold: 40 80% 55%;
+    --gold-foreground: 0 0% 5%;
+    --crimson: 345 80% 50%;
+    --crimson-light: 345 80% 60%;
+    --burgundy: 345 40% 12%;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 345 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 345 80% 50%;
+
+    --font-display: "Inter", sans-serif;
+    --font-body: "Inter", sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(40 80% 55%), hsl(45 90% 65%), hsl(35 75% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #F1D37E 50%, #B8860B 100%);
+  }
+
+  .bg-gradient-crimson {
+    background: linear-gradient(135deg, hsl(345 80% 50%), hsl(345 80% 40%));
+  }
+
+  .glass-card {
+    background: #2210159d;
+    backdrop-filter: blur(12px);
+    border: 1px solid hsla(0, 0%, 100%, 0.06);
+  }
+
+  .text-U1 { color: #C992A0; }
+  .mo-U1 { background: #331920; }
+}
+.admin-login-bg {
+  background-image: linear-gradient(
+      to bottom,
+      hsla(345, 40%, 8%, 0.85),
+      hsla(0, 0%, 8%, 0.95)
+    ),
+    url('/images/hero-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+} */
+
+
+
+
+@layer base {
+  :root {
+    --background: 343 36% 9.8%;
+    --foreground: 0 0% 95%;
+
+    --card: 344 34.2% 14.9% / 0.3;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 345 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 345 85.2% 44.9% / 0.1;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 16%;
+    /* --muted-foreground: 0 0% 60%; */
+    --muted-foreground: 215 20.2% 65.1%;
+
+
+    --accent: 40 80% 55%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 345 34.6% 21%;
+    --input: 0 0% 18%;
+    --ring: 345 80% 50%;
+
+    --radius: 0.5rem;
+
+    --gold: 40 80% 55%;
+    --gold-foreground: 0 0% 5%;
+    --crimson: 345 80% 50%;
+    --crimson-light: 345 80% 60%;
+    --burgundy: 345 40% 12%;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 345 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 345 80% 50%;
+
+    --font-display: "Inter", sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+
+
+        /* font-style: italic;
+    font-weight: 400; */
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(40 80% 55%), hsl(45 90% 65%), hsl(35 75% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    /* background: linear-gradient(135deg, hsl(40 80% 55%), hsl(45 90% 65%)); */
+                background: linear-gradient(135deg, #D4AF37 0%, #F1D37E 50%, #B8860B 100%);
+
+  }
+
+  .bg-gradient-crimson {
+    background: linear-gradient(135deg, hsl(345 80% 50%), hsl(345 80% 40%));
+  }
+
+  .glass-card {
+    background: #2210159d;
+    backdrop-filter: blur(12px);
+    border: 1px solid hsla(0, 0%, 100%, 0.06);
+  }
+
+  .text-U1{
+    color: #C992A0;
+  }
+
+  .mo-U1{
+    background: #331920;
+  }
+}
