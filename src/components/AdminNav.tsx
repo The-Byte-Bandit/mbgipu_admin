@@ -6,14 +6,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Bell, Search, Menu } from "lucide-react";
+import { GiVote } from "react-icons/gi";
 import { LayoutDashboard, Users, BarChart3, Megaphone, Settings, LogOut, Crown } from "lucide-react";
 
-import contestantImg from "@/public/images/contestant-1.jpg";   // we'll fix this below
+// import contestantImg from "@/public/images/contestant-1.jpg";   // we'll fix this below
 import logo from "@/public/images/logo.png";
+import wilz from "@/public/images/wilz_logo.svg";
+
 
 const mobileLinks = [
   { icon: LayoutDashboard, label: "Dashboard", path: "/admin/dashboard" },
   { icon: Users, label: "Models", path: "/admin/models" },
+  { icon: GiVote, label: "Votes", path: "/admin/votes" },
   { icon: BarChart3, label: "Voting Analytics", path: "/admin/analytics" },
   { icon: Megaphone, label: "Announcements", path: "/admin/announcements" },
   { icon: Settings, label: "Settings", path: "/admin/settings" },
@@ -52,12 +56,12 @@ export default function AdminNav() {
             
             <div className="flex items-center gap-2">
               <div className="text-right hidden sm:block">
-                <p className="text-sm font-body font-semibold text-foreground">Alexander Thorne</p>
+                {/* <p className="text-sm font-body font-semibold text-foreground">Alexander Thorne</p> */}
                 <p className="text-[9px] text-primary font-body tracking-wider">SYSTEM ADMINISTRATOR</p>
               </div>
               <div className="relative w-8 h-8">
                 <Image
-                  src={contestantImg}
+                  src={wilz}
                   alt="Admin"
                   fill
                   className="rounded-full object-cover border-2 border-primary"
