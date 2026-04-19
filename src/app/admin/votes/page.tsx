@@ -316,7 +316,7 @@ export default function AdminVotesPage() {
             >
               {/* Voter */}
               <div className="col-span-2 md:col-span-5 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium border border-primary/20">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium border border-primary/20 capitalize">
                   {getInitials(payment.payer_full_name || payment.payer_email)}
                 </div>
                 <div>
@@ -343,7 +343,7 @@ export default function AdminVotesPage() {
                   />
                 </div> */}
                 <div>
-                  <p className="text-sm font-medium">
+                  <p className="text-sm font-medium capitalize">
                     {payment.contestants?.first_name} {payment.contestants?.last_name} {payment.contestants?.other_names}
                   </p>
                   <p className="text-xs text-muted-foreground">

@@ -1095,8 +1095,8 @@ const chartData = useMemo(() => {
                     />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-body font-medium text-foreground">
-                      {user.first_name} {user.last_name}
+                    <p className="text-sm font-body font-medium text-foreground capitalize">
+                      {user.first_name} {user.last_name} {user.other_names}
                     </p>
                     <div className="w-full bg-secondary rounded-full h-1.5 mt-1">
                       <div className="bg-gradient-crimson h-1.5 rounded-full" style={{ width: `${90 - i * 15}%` }} />

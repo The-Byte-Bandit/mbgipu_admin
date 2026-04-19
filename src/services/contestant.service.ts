@@ -94,6 +94,9 @@ export const userService = {
         throw error;
       }
 
+      console.log(data, error);
+      
+
       return data || [];
     } catch (error: any) {
       logger.error(error, 'getAll users failed');

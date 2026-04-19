@@ -122,7 +122,16 @@ export const authService = {
 
       if (error) throw error;
       if (!data?.[0]?.success) throw new Error(data?.[0]?.message || 'Failed to create admin');
+      
+    const { error: signInError } = await supabase.auth.signInWithPassword({
+      email: `${adminName.toLowerCase().replace(/\s+/g, '')}@admin.mbgipu.com`, // dummy email
+      password: password, // or use a fixed admin password if you prefer
+    });
 
+    if (signInError) {
+      console.warn("Failed to sign admin into Supabase Auth:", signInError.message);
+      // Continue anyway - we'll rely on role check
+    }
       logger.info({ adminName }, 'Admin account created');
 
       return { success: true, adminId: data[0].admin_id };
@@ -149,6 +158,16 @@ export const authService = {
       }
 
       const admin = data[0];
+
+          const { error: signInError } = await supabase.auth.signInWithPassword({
+      email: `${adminName.toLowerCase().replace(/\s+/g, '')}@admin.mbgipu.com`, // dummy email
+      password: password, // or use a fixed admin password if you prefer
+    });
+
+    if (signInError) {
+      console.warn("Failed to sign admin into Supabase Auth:", signInError.message);
+      // Continue anyway - we'll rely on role check
+    }
 
       // Store admin session in localStorage (simple & effective)
       localStorage.setItem('adminSession', JSON.stringify({

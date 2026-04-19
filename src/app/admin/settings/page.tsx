@@ -2773,7 +2773,7 @@ export default function AdminSettings() {
             variant="destructive"
             className="w-full py-6 text-base font-semibold bg-primary hover:bg-primary/70"
           >
-            DEACTIVATE ALL USERS BELOW {minVotes} VOTES
+            DEACTIVATE ALL USERS BELOW VOTE
           </Button>
         </div>
 

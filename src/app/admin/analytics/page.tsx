@@ -959,8 +959,8 @@ const weeklyTrendData = useMemo(() => {
                       className="object-cover"
                     />
                   </div>
-                  <div className="font-medium text-sm">
-                    {c.first_name} {c.last_name}
+                  <div className="font-medium text-sm capitalize">
+                    {c.first_name} {c.last_name} {c.other_names}
                   </div>
                 </div>
 
